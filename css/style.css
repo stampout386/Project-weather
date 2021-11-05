@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}  
+h1 , h2 , h3 , h4 , h5 , h6 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.intro {
+    width: 100%;
+    height: 100vh;
+    background : url('../images/intro.jpg') center 
+    no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 40pt;
+    padding-top: 30px;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+select {
+    display: block;
+    width: 275px;
+    max-height: 50px;
+    font-size: 12pt;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.out-1{
+    width: 550px;
+    min-height: 40px;
+    background-color: white;
+    margin-top: 10px;
+    /* margin-left: 570px; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10pt;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas:"d1 d2" ;
+    grid-template-columns: 275px 275px;
+}
+.dta{
+    padding-left: 10px;
+    padding-top: 10px;
+    grid-area: d1;
+}
+.outtemp{
+    padding-left: 240px;
+    padding-top: 10px;
+    grid-area: d2;
+}
+
+.outall {
+    width: 500px;
+    max-height: 300px;
+    display: grid;
+    grid-template-areas: 
+    "h1 h2"
+    "h1 h5"
+    "h3 h6"
+    "h4 h7"
+    "h4 h8"
+    "h4 h9"
+    "h11 h10";
+    grid-column-gap: 100px;
+    /* margin-left:  515px;
+    margin-right: 300px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    grid-template-columns: 200px 200px;
+    background-color : rgba(255,255,255,0.5);
+    font-size: 15px;
+    
+}
+.gorod {
+    padding: 5px;
+    grid-area: h1;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.data {
+    padding-top: 30px;
+    text-align: center;
+    padding: 1px;
+    grid-area: h3;
+    
+}
+.clouds{
+    grid-area: h4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+.m{
+    width: 70px;
+    height: 70px;
+}
+.overcast {
+    text-align: center;
+    padding: 5px;
+    grid-area: h11;
+    
+}
+.maxtemp{
+    text-align: center;
+    padding: 5px;
+    grid-area: h2;
+}
+.mintemp{
+    text-align: center;
+    padding: 5px;
+    grid-area: h5;
+}
+.wind{
+    text-align: center;
+    padding: 5px;
+    grid-area: h6;
+}
+.humidity{
+    text-align: center;
+    padding: 5px;
+    grid-area: h7;
+}
+.pressure{
+    text-align: center;
+    padding: 5px;
+    grid-area: h8;
+}
+.sunrise{
+    text-align: center;
+    padding: 5px;
+    grid-area: h9;
+}
+.sunset{
+    text-align: center;
+    padding: 5px;
+    grid-area: h10;
+}
+
+
+
+/* .week{
+    transition: all ease 2s;
+} */
+.day-1{
+
+    display: grid;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 501px;
+    max-height: 50px;
+    background: rgba(31, 130, 205, 0.8);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    grid-template-areas:  "c1 c2 c3";
+    color: whitesmoke;
+    grid-template-columns: 167px 167px 167px;
+}
+
+.data-1{
+    padding-left: 5px;
+    grid-area: c1;
+}
+.overc-1{
+    grid-area: c2;
+
+}
+.m1{
+    width: 35px;
+    height: 35px;
+    padding-left: 60px;
+}
+.tem-1{
+    
+    padding-left: 140px;
+    grid-area: c3; 
+}
+.day-2{
+    display: grid;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 501px;
+    max-height: 80px;
+    background: rgba(31, 130, 205, 0.8);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    grid-template-columns: 167px 167px 167px;
+    grid-template-areas:  "c4 c5 c6";
+    color: whitesmoke;
+}
+.data-2{
+    padding-left: 5px;
+    grid-area: c4;
+}
+.overc-2{
+    grid-area: c5;
+}
+.tem-2{
+    padding-left: 140px;
+    grid-area: c6; 
+}
+.day-3{
+    display: grid;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 501px;
+    max-height: 80px;
+    background: rgba(31, 130, 205, 0.8);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    grid-template-columns: 167px 167px 167px;
+    grid-template-areas:  "c7 c8 c9";
+    color: whitesmoke;
+    font-weight: lighter;
+
+}
+.data-3{
+    padding-left: 5px;
+    grid-area: c7;
+}
+.overc-3{
+    grid-area: c8;
+}
+.tem-3{
+    padding-left: 140px;
+    grid-area: c9; 
+}
+.week :hover{
+    transition: all ease 1s;
+    background-color:rgba(30, 130, 128, 0.5);
+}
